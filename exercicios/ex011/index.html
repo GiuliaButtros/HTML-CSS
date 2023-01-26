@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>Abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho do navegador</p>
+
+    <picture>
+        <!--Exemplo: sendo 1000px o tamanho da foto da foto G, até chegar a 1000px é pra mostrar a imagem M-->
+
+        <!--Padrão é min-width mas é pra mudar pra max-->
+
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!--Os 50px a mais são por causa da barra de rolagem-->
+
+    <!--Os sources tem que estar acima da imagem padrão-->
+
+    <h1>Reproduzindo áudios</h1>
+
+    <!-- Uma das maneiras, mas só permite um tipo de arquivo
+        <audio src="midia/PressStart.wav" controls autoplay></audio> 
+    -->
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/PressStart.wav" type="audio/wav">
+        <source src="midia/PressStart.mp3" type="audio/mpeg">
+        <source src="midia/PressStart.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/PressStart.wav">Clique aqui para baixar o arquivo</a>
+        </p>
+
+        <!--Caso não toque wav, vai tentar mp3, caso não toque mp3, vai tocar ogg, caso não toque, o navegador da pessoa é incompatível-->
+        <!--Arquivos .wav são pesados, evitar-->
+        <!--Parâmetro preload auto é perigoso caso o arquivo seja muito grande-->
+        <!--Parâmetro loop é caso queira que o áudio recomece automaticamente-->
+
+    </audio>
+
+    <h1>Reproduzindo vídeos</h1>
+    <!--Navegadores: os padrões mais utilizados são MP4 & MKV, OGV (OGG), WEBM-->
+    <!--HandBrake: ferramenta grátis pra converter arquivos-->
+    <!--Evitar qualidade exagerada para hospedagem local (custo alto) / No máximo até 1080p-->
+
+
+
+</body>
+
+</html>

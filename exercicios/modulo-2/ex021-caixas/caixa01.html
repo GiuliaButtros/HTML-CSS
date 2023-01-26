@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{ /*box level*/
+
+            /* é possível transformar box level em inline com 
+            display: inline;
+            */
+
+            background-color: lavenderblush;
+            height: 300px;
+            width: 300px;
+
+            /*  
+                border-width: 10px;  
+                border-style: solid;
+                border-color: lightpink;
+                
+                shorthand: 
+            */ 
+            border: 10px solid lightpink;
+
+            /*
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+
+                shorthand:
+            */
+            padding: 10px; /* Quando todas as medidas são iguais, basta indicar apenas uma. Se forem diferentes, indicar no sentido horário. Quando se usa 2 valores, o de cima e o de baixo assumem o primeiro valor, direita e esquerda assumem o outro valor */
+
+            /*
+                margin-top: 20px;
+                margin-right: 20px;
+                margin-bottom: 40px;
+                margin-left: 20px;
+
+                shorthand:
+                 margin: 20px 20px 40px 20px;
+            */
+            margin: 20px auto 40px auto; 
+            /*centraliza horizontalmente
+
+            Outra opção: 
+                 margin: auto 
+            */
+
+            /*  
+                outline-width: 5px;
+                outline-style: dotted;
+                outline-color: blueviolet;
+                
+                shorthand: 
+            */ 
+            outline: 5px dotted blueviolet;
+
+        }
+        /* Ordem sentido horário */
+        
+        a { /*inline level*/
+
+            /* é possível transformar inline em block columns: ;display: block;
+            OU
+            display: inline-block (continua na linha mas com características de bloco, com altura, largura etc)
+            */
+            border-width: 3px;
+            border-style: solid;
+            border-color: lightcoral;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo box level</h1>
+    <p>Parágrafos também são box levels, mas os <a href="#">links são exemplos de inline level.</a></p>
+    
+</body>
+</html>

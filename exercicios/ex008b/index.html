@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte e pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript</p>
+    <!--Fonte de código: fonte monoespaçada
+
+    A tag code não organiza com indentação
+    
+    Para fazer a indentação devese envelopar o conteúdo do código e aplicar a tag pre. Exemplo abaixo: -->
+
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+
+    <!--Para reduzir o espaçamento de parágrafo da indentação: SHIFT+TAB ou só TAB para aumentar-->
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+
+    <!--Envelopar com a tag Q (pois é semântico, tem um sentido)-->
+
+    <h2>Citações completas</h2>
+    <p>Segundo Crowder, no seu livro Construindo Websites para leigos:</p>
+    <blockquote
+        cite="https://www.google.com.br/books/edition/Construindo_Web_Sites_Para_Leigos_Tradu/xlLcAwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">
+        A solução para esse problema é colocar algum conteúdo invisível no elemento P.</blockquote>
+
+    <!--Adicionar o link não aparece no produto final, mas é um respaldo para poder utilizar conteúdo de outras pessoas-->
+
+    <h2>Abreviações</h2>
+    <p>Aprendendo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>!
+    </p>
+    <!--Envelopar e adicionar o abbr: Vai aparecer o conteúdo quando passar o mouse por cima da sigla-->
+
+    <h2>Texto invertido</h2>
+    <p> <bdo dir="rtl">Aprendendo HTML</bdo> </p>
+    <!--rtl right to left / ltr left to right-->
+
+
+
+</body>
+
+</html>

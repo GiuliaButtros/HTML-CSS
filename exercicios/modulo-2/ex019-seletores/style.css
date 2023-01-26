@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* 
+    id em HTML = # em CSS (só pode 1 elemento)
+    class em HTML = . em CSS (pode vários elementos
+
+    Hierarquia:
+        primeiro o genérico
+        class
+        id (sobrepõe)
+*/
+
+body {
+    background-color: #F2EBEC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1#principal {
+   text-align: center; 
+   background-color:#BF7582 ;
+   border-radius: 10px;
+   color: white;
+}
+
+h1 {
+    color: #BF7069;
+}
+
+h2 {
+    color: #F2BC79;
+}
+
+.basico {
+    color: darkseagreen;
+}
+
+.intermediario {
+    color: rgb(217, 204, 128);
+}
+
+.avancado {
+    color: lightcoral;
+}
+
+.destaque {
+    background-color: #bf75835a;
+}

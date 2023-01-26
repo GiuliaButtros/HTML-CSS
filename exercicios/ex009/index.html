@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol> <!--Ordered list-->
+        <li>Acordar</li>
+        <li>Ligar p fulano</li>
+        <li>Café</li>
+        <li>Escovar dentes</li>
+        <li>Faculdade</li>
+        <li>Almoçar</li>
+        <li>Trabalho</li>
+        <li>Casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+
+        <!--A partir do HTML5 o fechamendo do li é opcional
+
+Criar listas com vários tópicos: digitar li*num (ex. li*7 cria 7 vezes o comano li e /li)-->
+
+    </ol>
+    <!--tipos 1 A a I i-->
+    <p>Lista começando do número 4:</p>
+    <ol type="1" start="4">
+        <li>Acordar</li>
+        <li>Ligar p fulano</li>
+        <li>Café</li>
+        <li>Escovar dentes</li>
+        <li>Faculdade</li>
+        <li>Almoçar</li>
+        etc
+    </ol>
+
+    <p>Lista começando com alfabeto:</p>
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Ligar p fulano</li>
+        <li>Café</li>
+        <li>Escovar dentes</li>
+        <li>Faculdade</li>
+        <li>Almoçar</li>
+        etc
+    </ol>
+
+    <p>Lista começando com números romanos:</p>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Ligar p fulano</li>
+        <li>Café</li>
+        <li>Escovar dentes</li>
+        <li>Faculdade</li>
+        <li>Almoçar</li>
+        etc
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <ul type="circle"> <!--Unordered list-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+    </ul>
+    <!-- tipos disc (padrão), circle, square-->
+
+    <!--Uso dos dois tipos de listas: receitas-->
+
+    <h2>Linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basics</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+        <!--start é um comando numérico-->
+    </ol>
+
+    <h2>Jogos favoritos</h2>
+    <ol>
+        <li>N64</li>
+        <ul type="square">
+            <li>The Legend of Zelda</li>
+            <ul type="disc">
+                <li>Majora's Mask</li>
+                <li>Ocarina of Time</li>
+            </ul>
+            <li>Pokémon Stadium</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Spyro 3</li>
+            <li>Tomb Raider</li>
+        </ul>
+        <li>Super Nintendo</li>
+        <ul type="square">
+            <li>Bomberman</li>
+            <li>Yoshi's Island</li>
+        </ul>
+        <!--Para alterar várias linhas de uma vez: pressionar alt gr -->
+    </ol>
+
+    <h2>Lista de definições</h2>
+    <dl> <!--Definition list-->
+        <dt>HTML</dt> <!--Termo-->
+        <dd>Linguagem de marcação para criação de conteúdo de site</dd> <!--Descrição-->
+
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação de design de site</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site</dd>
+    </dl>
+
+    <!-- Obs: exemplo para facilitar: ol>li*4 cria uma ol com 4 li já prontas-->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+
+</body>
+
+</html>

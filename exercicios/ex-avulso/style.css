@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-attachment: fixed; /*Aparentemente deu certo*/
+    background-image: linear-gradient(to bottom, #D9C7B8, #A6806A)
+  
+}
+
+mark {
+    background-color: rgb(211, 233, 122);
+}
+
+main { /*janela onde vai o conteúdo*/
+    background-color: white;
+    border-radius: 10px; /*Arredondar bordas*/
+    box-shadow: 5px 5px 15px #26171777; /*Parâmetros: projeção horizontal, projeção vertical, difusão, trasnparência*/
+    width: 600px; /*quanto espaço o conteúdo vai ocupar*/
+    padding: 10px; /*acolchoamento*/
+    margin: auto; /*centraliza automaticamente*/
+}
+
+h1 {
+    background-color: #c27261;
+    border-radius: 20px;
+    color: #733426;
+    text-align: center;
+    text-shadow: 0.5px 1px 1px #261717;
+}
+
+h2 {
+    color: #A66253;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    /*Como alinhar?*/
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+</head>
+
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Frtase com <b>termo em negrito </b>usando tag B (não semântica)</p>
+
+    <p>Frase com <strong>termo em destaque</strong> usando a tag STRONG (semântica)</p>
+
+    <h2>Itálico / ênfase</h2>
+    <p>Frase com <i>termo em itálico</i> usando a tag I (não semântica) </p>
+    <!--Selecionar o conteúdo a ser envelopado / Ctrl + Shift + p OU F1/ selecionar wrap abbreviation / i-->
+
+    <p>Frase com <em>termo em ênfase</em> usando a tag EM (semântico)</p>
+    <!--Selecionar a frase sem tags / Ctrl + Shift + p OU F1 / wrap abb / p (parágrafo)-->
+
+    <h2>Texto marcado</h2>
+    <p>Frase <mark style="background-color: rgb(244, 160, 160);">com marcação</mark> usando a tag MARK</p>
+    <!--Visual code não reconhece a tag MARK ainda, tem que usar o wrap abb / mark
+
+        Adicionar estilo usando CSS: style="background-color / escolher cor -->
+
+    <p>Outra frase <mark>com marcação</mark>, que não herda a característica da marcação acima</p>
+    <!--Para o parágrqafo herdar um estilo de marcação, não se deve usar o style backgrounc-color em uma tag específica
+    
+        É necessário criar uma tag style no cabeçalho. Exemplo:
+        
+        <style>
+            mark{
+                background-color: ESCOLHER COR;
+            }
+        </style>
+
+        Teste no exercício avulso
+    -->
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Um <big>texto grande</big> aqui e um <small>texto pequeno</small> aqui</p>
+
+    <!-- Tag big está obsoleta pois não é semântica / small pode continuar em uso pelo significado e importância de "letras pequenas" em um contrato por exemplo-->
+
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido mas não considerado</p>
+
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois</p>
+
+    <p>É possível <u>sublinhar com tag U</u> (não semântica) mas pode estar prestes a cair em desuso</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir textos como x<sup>20</sup>+3</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir textos como H<sub>2</sub>O</p>
+
+    <!-- Para adicionar sup e sub: F1 / wrap abb / sup (ou sub)-->
+
+
+</body>
+
+</html>

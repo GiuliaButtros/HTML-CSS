@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: antiquewhite;
+            margin: 0px;
+        }
+
+        header {
+            background-color: lightsalmon;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            box-shadow: inset 2px 3px 5px 0px #00000073;
+        }
+
+        nav {
+            background-color: rgba(250, 235, 215, 0.482);
+            padding: 3px;
+            box-shadow: 2px 3px 5px 0px #00000073; /*DevTools ajuda na horad e criar sombras*/
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(13, 132, 165);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 3px 5px 0px #00000058;       
+        }
+
+        article {
+            background-color: #d0e3e8;
+            padding: 5px;
+            border-radius: 30px;
+            margin: 5px;
+        }
+
+        article > aside {
+            background-color: #b1c3c9;
+        }
+
+        footer {
+            background-color: #975c45;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+            outline: 2px dashed #975c45;
+            box-shadow: 2px 3px 5px 0px #00000058
+        }
+    </style>
+</head>
+<body>
+    <div></div> <!-- Box level -->
+    <span></span> <!-- Inline level -->
+
+    <!-- Tags semânticas: -->
+
+    <header>
+        <h1>Meu cabeçalho</h1>
+        <nav> <!-- Exemplo: um menu -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- É permitido colocar qualquer grouping tag dentro de outras grouping tags -->
+        <section id="assuntos">
+
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Ano Novo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime rem hic! Dolore excepturi corporis iure qui? At, adipisci doloremque quibusdam mollitia perferendis delectus suscipit itaque aperiam, atque dolorem error.</p>
+                <aside>
+                    <p>Artigo escrito por Tubi</p>
+                </aside>
+
+            </article>
+            <article>
+                <h2>AAAAAA</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt a, perferendis sint doloremque minus quasi consequatur nulla earum culpa molestiae nesciunt cupiditate, ducimus quod deleniti tempore aliquam odio recusandae debitis.</p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido pela Tubi</p>
+
+    </footer>
+    <!-- Header, main, footer são como divs, mas com semântica -->
+
+    <div id="bola"></div>
+    
+</body>
+</html>
