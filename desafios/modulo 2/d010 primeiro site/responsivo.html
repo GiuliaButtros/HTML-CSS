@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /*por causa dos paddings e margins*/
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aut commodi quibusdam atque ut quia perferendis praesentium, eveniet iusto cum enim perspiciatis autem odit error accusantium repellendus id quae sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit officiis, quod odit eius iusto dignissimos optio. Quibusdam distinctio, ad iste explicabo esse tenetur optio blanditiis, unde, alias ea a. Accusantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, reiciendis debitis. Eius beatae tenetur ad, veniam ipsa adipisci numquam ut soluta quisquam maxime aperiam asperiores harum qui praesentium tempora quia.</p>
+        
+        <picture>
+            <source media="(max-width:600px )" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aut commodi quibusdam atque ut quia perferendis praesentium, eveniet iusto cum enim perspiciatis autem odit error accusantium repellendus id quae sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit officiis, quod odit eius iusto dignissimos optio. Quibusdam distinctio, ad iste explicabo esse tenetur optio blanditiis, unde, alias ea a. Accusantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, reiciendis debitis. Eius beatae tenetur ad, veniam ipsa adipisci numquam ut soluta quisquam maxime aperiam asperiores harum qui praesentium tempora quia.</p>
+    </main>
+    
+</body>
+</html>
