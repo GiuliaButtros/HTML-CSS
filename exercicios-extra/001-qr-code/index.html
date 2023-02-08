@@ -10,19 +10,103 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    :root {
+      --cor01: white;
+      --cor02: rgb(214, 226, 240);
+      --cor03: hsl(220, 15%, 55%);
+      --cor04: hsl(218, 44%, 22%);
+
+      --font: 'Outfit', sans-serif;;
+    }
+
+    body{
+      background-color: var(--cor02);
+      margin: 0px;
+    }
+
+    section {
+      background-color: var(--cor01);
+      max-width: 280px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 20px;
+      font-family: var(--font);
+      box-shadow: 0px 20px 20px hsla(217, 45%, 22%, 0.119);
+      text-align: center;
+    }
+
+    img {
+      border-radius: 10px;
+      width: 280px;
+      height: 280px;  
+    }
+
+    section > h1, p {
+      3,  
+      padding: 0px 15px;
+    }
+
+    h1 {
+      font-weight: bolder;
+      font-size: 22px;
+      color: var(--cor04);  
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--cor03);
+
+    }
+
+    footer {
+      padding: 5px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    footer a {
+      text-decoration: none;
+      font-weight: bold;
+      color: hsl(228, 45%, 44%);
+    }
+
+    footer a:hover {
+      text-decoration: none;
+      background-color: hsla(228, 45%, 44%, 0.479);
+      border-radius: 5px;
+      padding: 0px 3px;
+      color: white;
+    }
+
+    #container{
+      height: 96vh;
+      position: relative;
+    }
+
+    #content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
   </style>
 </head>
 <body>
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  <main id="container">
+    <section id="content">
+      <img src="images/image-qr-code.png" alt="QR Code">
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </section>
+  </main>
   
-  <div class="attribution">
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Giulia Buttros</a>.
+  </footer>
 </body>
 </html>
