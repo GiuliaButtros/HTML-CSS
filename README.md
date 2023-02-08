@@ -3,4 +3,4 @@
 
  Aprendendo a gerenciar repositórios
 
-<a href="https://giuliabuttros.github.io/HTML-CSS/exercicios/ex001/index.html">Executar o exercício 001</a>
+<a href="https://giuliabuttros.github.io/HTML-CSS/exercicios-extra/001-qr-code/">Executar o exercício extra 001 / Open exercise 001 - QR Code Component</a>
