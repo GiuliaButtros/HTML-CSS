@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off"> 
+        <!-- 
+            Forma mais básica mas não a melhor 
+
+            GET é o método padrão / Quando envia dados por GET, só pode até 3000 bytes (aprox 3000 letras) / não pode usar com dados sensíveis, envio de arquivos
+
+            POST faz com que o dado fique escondido do usuário, mas ainda está visível pelo inspetor / melhor para dados sensíveis (HTTPS É O IDEAL MAS ISSO É ASSUNTO PRA DEPOIS), dados com mais de 3000bytes, envio de arquivos    
+        -->
+        <p><label for="inome">Nome:</label>  <!-- LABEL para ID -->
+            <input type="text" name="nome" id="inome"></p>
+            <!-- nome é mais útil para PHP, id pe mais útil para JS -->
+            
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+ 
+
+</body> 
+</html>
