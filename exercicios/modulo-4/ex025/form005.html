@@ -7,6 +7,34 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Exemplo</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label> <br>
+            <!-- quando o name é igual, evita que as duas opções sejam selecionáveis -->
+            <input type="radio" name="sexo" id="isxfem" value="F" checked> <label for="isxfem">Feminino</label>
+            <!-- checked serve para já deixar algo selecionado por padrão -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esten" id="iten"> <label for="iten">Tênis</label> <br>
+        </fieldset>
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+    </form>
     
 </body>
 </html>
