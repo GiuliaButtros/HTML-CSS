@@ -19,8 +19,22 @@ header > h1 {
     text-align: center;
 }
 
-menu {
+span#burger {
+    background-color: rgb(67, 67, 67);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burger:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
 
 }
 
@@ -33,7 +47,7 @@ menu > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(101, 101, 101);
     color: white;
     border-top: 2px solid gray;
 }
